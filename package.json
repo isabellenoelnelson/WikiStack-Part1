@@ -1,0 +1,30 @@
+{
+  "name": "wikistack-part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon /Users/isabellenelson/Documents/Code/Immersive/junior_phase/WikiStack-Part1/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellenoelnelson/WikiStack-Part1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabellenoelnelson/WikiStack-Part1/issues"
+  },
+  "homepage": "https://github.com/isabellenoelnelson/WikiStack-Part1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-template-tag": "^3.2.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
