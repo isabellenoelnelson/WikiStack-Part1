@@ -30,7 +30,7 @@ module.exports = () => layout(html`
     <div>
     <label for="content" class="col-sm-2 control-label">Page Content</label>
       <div class="col-sm-10">
-        <input id="conten" name="content" type="text" class="form-control"/>
+        <textarea id="conten" name="content" type="text" class="form-control"></textarea>
       </div>
     </div>
 

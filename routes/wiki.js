@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const main = require('../views/main');
 const { addPage } = require('../views');
+const { Page } = require('../models');
 
 
 // GET /wiki/
@@ -14,8 +15,17 @@ router.get('/', async(req, res, next) => {
 
 // POST /wiki/
 router.post('/', async(req, res, next) => {
+  const title = req.body.title;
+  const content = req.body.content;
+
   try {
-    res.json(req.body);
+    const page = await Page.create({
+      title: title,
+      content: content
+    });
+
+    res.redirect('/');
+
   } catch(err) {
     next(err);
   }
