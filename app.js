@@ -22,6 +22,7 @@ app.get('/', async(req, res, next) => {
   res.redirect('/wiki');
 })
 
+
 db.authenticate()
   .then(() => {
     console.log('connected to the database');
